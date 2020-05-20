@@ -2,12 +2,13 @@ package com.amitshekhar.tflite;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.wonderkiln.camerakit.CameraKitError;
 import com.wonderkiln.camerakit.CameraKitEvent;
@@ -22,8 +23,8 @@ import java.util.concurrent.Executors;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String MODEL_PATH = "SAMPLE_Flower_model.tflite";
-    private static final boolean QUANT = true;
+    private static final String MODEL_PATH = "flower_model.tflite";
+    private static final boolean QUANT = false;
     private static final String LABEL_PATH = "labels.txt";
     private static final int INPUT_SIZE = 224;
 
